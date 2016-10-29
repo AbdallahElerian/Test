@@ -29,6 +29,7 @@ void AddDialog::Reset(const QString &)
     if (ui->editFullname->text().size() > 0 &&
             ui->editId->text().size() > 0)
     {
+        printf("batata")
         tempUint = atoi(ui->editId->text().toLocal8Bit().data());
 
         if (strcmp(QString::number(tempUint).toLocal8Bit().data(),
